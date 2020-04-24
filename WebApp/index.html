@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller05</title>
+</head>
+
+<head>
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <title>Proyecto Integrador</title>
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  </head>
+
+
+<body>
+  <div class="main">
+    <div class="social-icons">
+       <div class="col_1_of_f span_1_of_f"><a href="#">
+          <ul class='facebook'>
+            <i class="fb"> </i>
+            <li>Facebook</li>
+          <div class='clear'> </div>
+          
+          </ul>
+          </a>
+       </div>	
+       <div class="col_1_of_f span_1_of_f"><a href="#">
+          <ul class='gmail'>
+            <i class="gm"> </i>
+            <li>Gmail</li>
+            <div class='clear'> </div>
+          </ul>
+          </a>
+      </div>
+      <div class="clear"> </div>	
+      </div>
+
+    <center><button id="glogin">ingresar con google</button>
+    <button id="flogin">ingresar con facebook</button>
+    <div id="root">
+    <img id=”avatar” src="" alt="" >
+    </div></center>
+
+<script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous">
+</script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBUzSn46EPJ_O4DLrHtpDpepr6TDQja0Cc",
+    authDomain: "taller05-d486f.firebaseapp.com",
+    databaseURL: "https://taller05-d486f.firebaseio.com",
+    projectId: "taller05-d486f",
+    storageBucket: "taller05-d486f.appspot.com",
+    messagingSenderId: "425123998628",
+    appId: "1:425123998628:web:58a578d5a73423f0a5af31",
+    measurementId: "G-JFBYT4J37C"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+
+
+    <script src="app.js"></script>
+    <h2>Registrese</h2>
+		<form>
+		   <div class="lable">
+		        <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="Nombre" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'First Name';}" id="active"></div>
+                <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="Apellido" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></div>
+                <div class="clear"> </div>
+		   </div>
+		   <div class="lable-2">
+		        <input type="text" class="text" value="Tucorreo@email.com " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your@email.com ';}">
+		        <input type="password" class="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password ';}">
+		   </div>
+		   <h3>Al crear una cuenta, usted acepta nuestros <span class="term"><a href="#">Términos y condiciones</a></span></h3>
+		   <div class="submit">
+			  <input type="submit" onclick="myFunction()" value="Crear cuenta" >
+		   </div>
+		   <div class="clear"> </div>
+		</form>
+		
+		</div>
+		 
+   		<div class="copy-right">
+			
+		</div>
+				
+</body>
+</html>
